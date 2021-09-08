@@ -15,8 +15,11 @@ class CreateEnrollmentsTable extends Migration
     {
         Schema::create('enrollments', function (Blueprint $table) {
             $table->id();
-            $table->integer('lrn');
-            $table->text('name');
+            $table->integer('lrn')->nullable();
+            $table->integer('status');
+            $table->integer('grd_lv_enroll');
+            $table->integer('curriculum');
+            $table->integer('lastSchoolAtt');
             $table->timestamps();
         });
     }
