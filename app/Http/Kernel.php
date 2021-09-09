@@ -63,5 +63,8 @@ class Kernel extends HttpKernel
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,
         'verified' => \Illuminate\Auth\Middleware\EnsureEmailIsVerified::class,
+        //register new middleware
+        'preventBackHistory'=>\App\Http\Middleware\PreventBackHistory::class,
+        //para yan sa once na naglogin ako. pag tig pidut ko si back button sa browser dae ako ibabalik
     ];
 }

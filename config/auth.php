@@ -17,6 +17,10 @@ return [
         'guard' => 'web',
         'passwords' => 'users',
     ],
+    'teacher' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\Teacher::class,
+    ],
 
     /*
     |--------------------------------------------------------------------------
@@ -39,6 +43,10 @@ return [
         'web' => [
             'driver' => 'session',
             'provider' => 'users',
+        ],
+        'teacher' => [//nagregister kitang guard ulit pero teacher na man
+            'driver' => 'session',
+            'provider' => 'teachers',
         ],
     ],
 
@@ -69,6 +77,11 @@ return [
         //     'driver' => 'database',
         //     'table' => 'users',
         // ],
+
+        'teachers' => [//tapos providers pa pra sa model kung saan kukuha ng data
+            'driver' => 'eloquent',
+            'model' => App\Models\Teacher::class,
+        ],
     ],
 
     /*
@@ -92,6 +105,10 @@ return [
             'table' => 'password_resets',
             'expire' => 60,
             'throttle' => 60,
+        ],
+        'teachers' => [//for futuer use baga magamit mo. malay lang natin
+            'driver' => 'eloquent',
+            'model' => App\Models\Teacher::class,
         ],
     ],
 

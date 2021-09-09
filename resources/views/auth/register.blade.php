@@ -34,9 +34,9 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-1">
                                             <label for="lrn" class="col-form-label text-md-right">{{ __('LRN') }}</label>
-                                            <input id="lrn" type="text" class="form-control @error('lrn') is-invalid @enderror" name="lrn" value="{{ old('lrn') }}" autocomplete="lrn"
+                                            <input id="lrn" type="text" class="form-control @error('lrn') is-invalid @enderror" name="lrn" value="{{ old('lrn') }}" autocomplete="off"
                                             pattern="^[0-9]{11}$" onkeypress="return numberOnly(event)"
-                                            maxlength="11" autofocus>
+                                            maxlength="11" autofocus autocomplete="off">
                                             @error('lrn')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -98,7 +98,7 @@
                                     <div class="col-md-12">
                                         <div class="form-group mb-1">
                                             <label for="lastSchoolAtt" class="col-form-label text-md-right">{{ __('Last School Attended') }}</label>
-                                            <input id="lastSchoolAtt" type="text" class="form-control @error('lastSchoolAtt') is-invalid @enderror" name="lastSchoolAtt" value="{{ old('lastSchoolAtt') }}" autocomplete="lastSchoolAtt" autofocus>
+                                            <input id="lastSchoolAtt" type="text" class="form-control @error('lastSchoolAtt') is-invalid @enderror" name="lastSchoolAtt" value="{{ old('lastSchoolAtt') }}" autocomplete="off" autofocus autocomplete="off">
                                             @error('lastSchoolAtt')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -114,7 +114,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="fname" class="col-form-label text-md-right">{{ __('First Name') }}</label>
-                                            <input id="fname" type="text" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" autocomplete="fname" autofocus>
+                                            <input id="fname" type="text" class="form-control @error('fname') is-invalid @enderror" name="fname" value="{{ old('fname') }}" autocomplete="off" autofocus>
                                             
                                             @error('fname')
                                                 <span class="invalid-feedback" role="alert">
@@ -128,7 +128,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="mname" class="col-form-label text-md-right">{{ __('Middle Name') }}</label>
-                                            <input id="mname" type="text" class="form-control @error('mname') is-invalid @enderror" name="mname" value="{{ old('mname') }}" autocomplete="mname" autofocus>
+                                            <input id="mname" type="text" class="form-control @error('mname') is-invalid @enderror" name="mname" value="{{ old('mname') }}" autocomplete="off" autofocus>
         
                                             @error('mname')
                                                 <span class="invalid-feedback" role="alert">
@@ -142,7 +142,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="lname" class="col-form-label text-md-right">{{ __('Last Name') }}</label>
-                                            <input id="lname" type="text" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" autocomplete="lname" autofocus>
+                                            <input id="lname" type="text" class="form-control @error('lname') is-invalid @enderror" name="lname" value="{{ old('lname') }}" autocomplete="off" autofocus>
                                             @error('lname')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -154,7 +154,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="dateBirth" class="col-form-label text-md-right">{{ __('Birth of Date') }}</label>
-                                            <input id="dateBirth" type="date" class="form-control @error('dateBirth') is-invalid @enderror" name="dateBirth" value="{{ old('dateBirth') }}" autocomplete="dateBirth" autofocus>
+                                            <input id="dateBirth" type="date" class="form-control @error('dateBirth') is-invalid @enderror" name="dateBirth" value="{{ old('dateBirth') }}" autocomplete="off" autofocus>
                                             @error('dateBirth')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -181,7 +181,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="contactNo" class="col-form-label text-md-right">{{ __('Contact Number') }}</label>
-                                            <input id="contactNo" type="text" class="form-control @error('contactNo') is-invalid @enderror" name="contactNo" value="{{ old('contactNo') }}" autocomplete="contactNo"
+                                            <input id="contactNo" type="text" class="form-control @error('contactNo') is-invalid @enderror" name="contactNo" value="{{ old('contactNo') }}" autocomplete="off"
                                             pattern="^[0-9]{11}$" onkeypress="return numberOnly(event)"
                                             maxlength="11">
                                             @error('contactNo')
@@ -195,7 +195,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group mb-1">
                                             <label for="region" class="col-form-label text-md-right">{{ __('Region') }}</label>
-                                            <input id="region" type="text" class="form-control @error('region') is-invalid @enderror" name="region" value="{{ old('region') }}" autocomplete="region">
+                                            <input id="region" type="text" class="form-control @error('region') is-invalid @enderror" name="region" value="{{ old('region') }}" autocomplete="off">
                                             @error('region')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -206,7 +206,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group mb-1">
                                             <label for="province" class="col-form-label text-md-right">{{ __('Province') }}</label>
-                                            <input id="province" type="text" class="form-control @error('province') is-invalid @enderror" name="province" value="{{ old('province') }}" autocomplete="province">
+                                            <input id="province" type="text" class="form-control @error('province') is-invalid @enderror" name="province" value="{{ old('province') }}" autocomplete="off">
                                             @error('province')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -217,7 +217,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group mb-1">
                                             <label for="town" class="col-form-label text-md-right">{{ __('Town') }}</label>
-                                            <input id="town" type="text" class="form-control @error('town') is-invalid @enderror" name="town" value="{{ old('town') }}" autocomplete="town">
+                                            <input id="town" type="text" class="form-control @error('town') is-invalid @enderror" name="town" value="{{ old('town') }}" autocomplete="off">
                                             @error('town')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -228,7 +228,7 @@
                                     <div class="col-md-3">
                                         <div class="form-group mb-1">
                                             <label for="barangay" class="col-form-label text-md-right">{{ __('Barangay') }}</label>
-                                            <input id="barangay" type="text" class="form-control @error('barangay') is-invalid @enderror" name="barangay" value="{{ old('barangay') }}" autocomplete="barangay">
+                                            <input id="barangay" type="text" class="form-control @error('barangay') is-invalid @enderror" name="barangay" value="{{ old('barangay') }}" autocomplete="off">
                                             @error('barangay')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -239,7 +239,7 @@
                                     <div class="col-md-8">
                                         <div class="form-group mb-1">
                                             <label for="fatherName" class="col-form-label text-md-right">{{ __("Father's Name") }}</label>
-                                            <input id="fatherName" type="text" class="form-control @error('fatherName') is-invalid @enderror" name="fatherName" value="{{ old('fatherName') }}" autocomplete="fatherName">
+                                            <input id="fatherName" type="text" class="form-control @error('fatherName') is-invalid @enderror" name="fatherName" value="{{ old('fatherName') }}" autocomplete="off">
                                             @error('fatherName')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -250,7 +250,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="fatherContact" class="col-form-label text-md-right">{{ __('Contact Number') }}</label>
-                                            <input id="fatherContact" type="text" class="form-control @error('fatherContact') is-invalid @enderror" name="fatherContact" value="{{ old('fatherContact') }}" autocomplete="fatherContact"
+                                            <input id="fatherContact" type="text" class="form-control @error('fatherContact') is-invalid @enderror" name="fatherContact" value="{{ old('fatherContact') }}" autocomplete="off"
                                             pattern="^[0-9]{11}$" onkeypress="return numberOnly(event)"
                                             maxlength="11">
                                             @error('fatherContact')
@@ -263,7 +263,7 @@
                                     <div class="col-md-8">
                                         <div class="form-group mb-1">
                                             <label for="motherName" class="col-form-label text-md-right">{{ __("Mother's Name") }}</label>
-                                            <input id="motherName" type="text" class="form-control @error('motherName') is-invalid @enderror" name="motherName" value="{{ old('motherName') }}" autocomplete="motherName">
+                                            <input id="motherName" type="text" class="form-control @error('motherName') is-invalid @enderror" name="motherName" value="{{ old('motherName') }}" autocomplete="off">
                                             @error('motherName')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -274,7 +274,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group mb-1">
                                             <label for="motherContact" class="col-form-label text-md-right">{{ __('Contact Number') }}</label>
-                                            <input id="motherContact" type="text" class="form-control @error('motherContact') is-invalid @enderror" name="motherContact" value="{{ old('motherContact') }}" autocomplete="motherContact"
+                                            <input id="motherContact" type="text" class="form-control @error('motherContact') is-invalid @enderror" name="motherContact" value="{{ old('motherContact') }}" autocomplete="off"
                                             pattern="^[0-9]{11}$" onkeypress="return numberOnly(event)"
                                             maxlength="11">
                                             @error('motherContact')
@@ -287,7 +287,7 @@
                                     <div class="col-md-8">
                                         <div class="form-group mb-1">
                                             <label for="guardianName" class="col-form-label text-md-right">{{ __("Guardian's Name") }}</label>
-                                            <input id="guardianName" type="text" class="form-control @error('guardianName') is-invalid @enderror" name="guardianName" value="{{ old('guardianName') }}" autocomplete="guardianName">
+                                            <input id="guardianName" type="text" class="form-control @error('guardianName') is-invalid @enderror" name="guardianName" value="{{ old('guardianName') }}" autocomplete="off">
                                             @error('guardianName')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
@@ -298,7 +298,7 @@
                                     <div class="col-md-4">
                                         <div class="form-group  mb-1">
                                             <label for="guardianContact" class="col-form-label text-md-right">{{ __('Contact Number') }}</label>
-                                            <input id="guardianContact" type="text" class="form-control @error('guardianContact') is-invalid @enderror" name="guardianContact" value="{{ old('guardianContact') }}" autocomplete="guardianContact"
+                                            <input id="guardianContact" type="text" class="form-control @error('guardianContact') is-invalid @enderror" name="guardianContact" value="{{ old('guardianContact') }}" autocomplete="off"
                                             pattern="^[0-9]{11}$" onkeypress="return numberOnly(event)"
                                             maxlength="11">
                                             @error('guardianContact')
@@ -311,7 +311,7 @@
                                     <div class="col-md-8">
                                         <div class="form-group  mb-1">
                                             <label for="password" class="col-form-label text-md-right">{{ __('Password') }}</label>
-                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="{{ old('password') }}" autocomplete="password" maxlength="11">
+                                            <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" value="" autocomplete="off" maxlength="11">
                                             @error('password')
                                                 <span class="invalid-feedback" role="alert">
                                                     <strong>{{ $message }}</strong>
