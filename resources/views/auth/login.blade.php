@@ -1,15 +1,15 @@
 @extends('layouts.app')
-
+@section('title', 'Login')
 @section('content')
 
 <div class="container py-4">
   <form method="POST" action="{{ route('auth.login_post') }}" autocomplete="off">
       <div class="row justify-content-center">
           <div class="col-md-8">
-              <div class="card">
-                  <div class="card-header" style="background-color: #b3fff0;"><h4>{{ __('Login') }}</h4></div>
-                  <div class="card-body">
-                    @csrf
+            <div class="card card-primary card-outline">
+              <div class="card-body">
+                <h2 class="card-title">Login</h2><br><hr>
+                @csrf
                     <div class="row justify-content-center">
                       @if (session()->has('msg'))
                       <div class="col-md-12">
@@ -44,7 +44,7 @@
                       <button type="submit" class="btn btn-primary">Submit</button> --}}
                     </div>
               </div>
-          </div>
+            </div>
       </div>
   </form>
 </div>

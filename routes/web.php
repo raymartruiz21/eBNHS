@@ -21,7 +21,7 @@ use Illuminate\Support\Facades\Artisan;
 */
 
 // pre enrollment route
-Route::get('reg',[AuthController::class,'registration'])->name('registerStudent');
+// Route::get('reg',[AuthController::class,'registration'])->name('registerStudent');
 // Route::post('pre-enrollment/store',[EnrollmentController::class,'store']);
 
 //digdi so login 
